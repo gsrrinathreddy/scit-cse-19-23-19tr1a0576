@@ -7,6 +7,7 @@ import Hobbies from './pages/Hobbies';
 import Skills from './pages/Skills';
 import Experience from './pages/Experience';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { ContactMe } from './components/ContactMe';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
           <Route path="Hobbies" element={<Hobbies/>}/>
           <Route path="Skills" element={<Skills/>}/>
           <Route path="Experience" element={<Experience/>}/>
-
+          <Route path='contactme' element={<ContactMe/>}/>
         </Routes>
       </BrowserRouter>
     </div>
