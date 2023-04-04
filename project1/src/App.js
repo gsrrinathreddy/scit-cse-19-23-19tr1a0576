@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
 import Navbar from './components/Navbar';
 import Aboutme from './pages/Aboutme';
@@ -7,7 +7,11 @@ import Hobbies from './pages/Hobbies';
 import Skills from './pages/Skills';
 import Experience from './pages/Experience';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import { ContactMe } from './components/ContactMe';
+import Contactme from './pages/Contactme';
+import Certificates from './pages/Certificates';
+import Projects from './pages/Projects';
+
+
 
 
 function App() {
@@ -22,8 +26,11 @@ function App() {
           <Route path="Hobbies" element={<Hobbies/>}/>
           <Route path="Skills" element={<Skills/>}/>
           <Route path="Experience" element={<Experience/>}/>
-          <Route path='contactme' element={<ContactMe/>}/>
-        </Routes>
+          <Route path='Contactme' element={<Contactme/>}/>
+          <Route path='Certificates' element={<Certificates/>}/>
+          <Route path='Projects' element={<Projects/>}/>
+
+      </Routes>
       </BrowserRouter>
     </div>
   );
